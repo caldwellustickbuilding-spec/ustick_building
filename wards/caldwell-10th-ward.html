@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base target="_top">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow"><title>Caldwell  10th  Ward</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Source&#43;Sans&#43;3:wght@400;600&amp;display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sky: #E6EDF3;
+    --mist: #F7F9FB;
+    --slate: #1F3347;
+    --slate-soft: #4F6275;
+    --gold: #A8844E;
+    --line: #D5DEE6;
+    --temple-photo: none;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body { min-height: 100%; }
+
+  body {
+    font-family: "Source Sans 3", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--slate);
+    background-color: var(--sky);
+    background-image:
+      linear-gradient(180deg, rgba(247,249,251,.55) 0%, rgba(247,249,251,.82) 45%, rgba(247,249,251,.96) 100%),
+      var(--temple-photo),
+      linear-gradient(180deg, #CFDDE9 0%, #E6EDF3 50%, #F7F9FB 100%);
+    background-size: cover, cover, cover;
+    background-position: center top;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 2rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  header { text-align: center; margin-bottom: 2rem; }
+
+  .logo {
+    display: block;
+    max-width: 220px;
+    width: 70%;
+    height: auto;
+    margin: 0 auto 1.75rem;
+  }
+
+  h1 {
+    font-family: "Marcellus", Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: clamp(1.9rem, 8vw, 2.4rem);
+    line-height: 1.15;
+    letter-spacing: .02em;
+  }
+
+  .rule {
+    width: 3rem;
+    height: 2px;
+    background: var(--gold);
+    margin: 1rem auto;
+    border: 0;
+  }
+
+  .intro { font-size: 1.05rem; color: var(--slate-soft); }
+
+  nav {
+    background: rgba(255,255,255,.92);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 28px rgba(31,51,71,.08);
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-height: 4.75rem;
+    padding: 1rem 1.25rem;
+    color: inherit;
+    text-decoration: none;
+    border-top: 1px solid var(--line);
+    -webkit-tap-highlight-color: transparent;
+  }
+  .row:first-child { border-top: 0; }
+  a.row:active { background: var(--sky); }
+  a.row:focus-visible { outline: 3px solid var(--gold); outline-offset: -3px; }
+
+  .ward { flex: 1; }
+  .ward-name {
+    display: block;
+    font-family: "Marcellus", Georgia, serif;
+    font-size: 1.3rem;
+    line-height: 1.25;
+  }
+  .ward-time {
+    display: block;
+    font-size: .95rem;
+    color: var(--slate-soft);
+    margin-top: .15rem;
+  }
+
+  .chev { flex: none; width: 1.1rem; height: 1.1rem; color: var(--gold); }
+
+  .empty { padding: 1.5rem 1.25rem; text-align: center; color: var(--slate-soft); }
+
+  footer {
+    margin-top: auto;
+    padding-top: 2.5rem;
+    text-align: center;
+    font-size: .9rem;
+    color: var(--slate-soft);
+    line-height: 1.5;
+  }
+
+  @media (hover: hover) {
+    a.row:hover { background: var(--mist); }
+  }
+</style>
+
+<style>
+  .back {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    min-height: 2.75rem;
+    font-size: .95rem;
+    color: var(--slate-soft);
+    text-decoration: none;
+    margin-bottom: 1rem;
+  }
+  .back svg { width: 1rem; height: 1rem; color: var(--gold); }
+  .back:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; border-radius: 4px; }
+
+  .logo.small { max-width: 120px; width: 40%; margin-bottom: 1.25rem; }
+
+  .building { font-size: 1rem; color: var(--slate-soft); margin-bottom: .35rem; }
+  .meeting { font-size: 1.05rem; color: var(--slate-soft); }
+
+  .link-note {
+    display: block;
+    font-size: .95rem;
+    color: var(--slate-soft);
+    margin-top: .15rem;
+  }
+</style>
+<style>
+  .group + .group { margin-top: 2rem; }
+
+  .group-heading {
+    font-family: "Marcellus", Georgia, serif;
+    font-weight: 400;
+    font-size: 1.15rem;
+    line-height: 1.3;
+    margin: 0 .25rem .65rem;
+    color: var(--slate);
+  }
+  .group-heading a {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    min-height: 2.75rem;
+    color: inherit;
+    text-decoration: none;
+  }
+  .group-heading svg { width: .95rem; height: .95rem; color: var(--gold); flex: none; }
+  .group-heading a:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; border-radius: 4px; }
+
+  .address { margin-top: .35rem; font-size: 1rem; }
+  .address a {
+    color: var(--slate-soft);
+    text-decoration: underline;
+    text-decoration-color: var(--line);
+    text-underline-offset: 3px;
+  }
+  .intro { margin-top: .75rem; }
+</style></head>
+<body>
+  <main class="page">
+          <a class="back" href="../buildings/montana-building.html" target="_top">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 4l-6 6 6 6"/></svg>
+        Montana Building      </a>
+    
+    <header>
+                    <p class="building">Caldwell Idaho Lake Lowell</p>
+            <h1>Caldwell  10th  Ward</h1>
+      <hr class="rule">
+              <p class="meeting">Sacrament meeting 12:00 PM</p>
+                      </header>
+
+          <nav aria-label="Caldwell  10th  Ward">
+        <p class="empty">Links for this ward will be posted soon.</p>
+      </nav>
+    
+    
+          <footer>Ward directories and callings are in the Member Tools app.</footer>
+      </main>
+</body>
+</html>
